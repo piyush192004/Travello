@@ -622,6 +622,14 @@ header .search-bar-container label:hover {
 
 /* media queries  */
 
+/* Default styles for larger screens */
+
+html {
+  font-size: 62.5%;
+}
+
+/* Media queries for responsive design */
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -643,6 +651,10 @@ header .search-bar-container label:hover {
     display: initial;
   }
 
+  header {
+    padding: 1rem 2rem; /* Adjust header padding */
+  }
+
   header .navbar {
     position: absolute;
     top: 100%;
@@ -650,7 +662,7 @@ header .search-bar-container label:hover {
     left: 0;
     background: #333;
     border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
-    padding: 1rem 2rem;
+    padding: 1rem; /* Adjust navbar padding */
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
@@ -662,8 +674,9 @@ header .search-bar-container label:hover {
     display: block;
     border-radius: 0.5rem;
     padding: 1.5rem;
-    margin: 1.5rem 0;
+    margin: 1rem 0; /* Adjust margin for better spacing */
     background: #222;
+    text-align: center;
   }
 }
 
@@ -673,7 +686,7 @@ header .search-bar-container label:hover {
   }
 
   .heading span {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Adjust font size for heading span */
   }
 
   .contact .row form .inputBox input {
